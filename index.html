@@ -1,3 +1,669 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ATG.WORLD</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/f540fd6d80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <nav class="navbar">
+            <div class="max-width">
+                <a href="mimage" href="#">
+                    <img class="logo" src="assets/logo.svg" alt="ATG.WORLD" />
+                </a>
+                <div class="search-container">
+                    <img src="assets/searchicon.svg">
+                    <input class="form-control" type="search" placeholder="Search for your favorite groups in ATG" aria-label="Search">
+                </div>
+                <div class="account" id="account">
+                    <p class="cacc">
+                        Create account.
+                        <a href="#" class="txtfree" id="signupButton">It's free!
+                            <i id="ddown" class="fa-sharp fa-solid fa-caret-down"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="accountCreated" id="accountCreated">
+                    <img class="dp" src="assets/sarthakgoyal.svg" alt="dp" />
+                    <p class="cacc">
+                        Siddharth Goyal
+                        <i id="ddown" class="fa-sharp fa-solid fa-caret-down"></i>
+                    </p>
+                </div>
+
+                <!--SignIn/Up card-->
+            <div class="overlay" id="signupOverlay">
+                    <div class="overlay-content">
+                        <span class="close" id="closeOverlay"><i class="fa-solid fa-xmark"></i></span>
+
+
+            <div class="card" id="card">
+                <div class="form" id="form">
+                     <!--front-->
+                        <div class="front">
+                           <div class="statement">
+                                <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+                            </div>
+                            <h2>Sign In</h2>
+                            <div class="inputbox">
+                                <input type="text" required="required" placeholder="Email">
+                                <i></i>
+                            </div>
+                            <div class="inputbox">
+                                <input type="password" id="passwordField" required="required" placeholder="Password">
+                                <div class="eye-icon">
+                                    <img src="assets/view.svg" alt="Toggle Password Visibility">
+                                </div>
+                            </div>
+                        <input type="submit" value="Sign In" id="create">
+                
+                        <div class="facebookBox">
+                        <img src="assets/facebooklogo.svg" alt="">
+                        <p>Sign in with Facebook</p>
+                        </div>
+                
+                        <div class="googleBox">
+                            <img src="assets/googlelogo.svg" alt="">
+                            <p>Sign in with Google</p>
+                        </div>
+                
+                        <div class="signup">Don’t have an account yet?
+                            <button class="sunow" onclick="flip()"
+                            >Create new for free!</button>
+                        </div>
+                        <div class="links">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                
+                        <div class="minimalimg">
+                            <img src="assets/Formsideimg.svg" alt="">
+                        </div>
+                     </div>
+
+                     <!-- back -->
+                     <div class="back">
+
+                        <div class="statement">
+                            <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+                        </div>
+                        
+                        <h2>Create Account</h2>
+                        <div class="namebox">
+                
+                                <input type="text" required="required" placeholder="First Name">
+                                <i></i>
+                        
+                                <input type="text" required="required" placeholder="Last Name">
+                                <i></i> 
+                        </div>
+                        <div class="inputbox2">
+                            <input type="text" required="required" placeholder="Email">
+                            <i></i>
+                        </div>
+                        <div class="inputbox2">
+                            <input type="password" id="passwordField" required="required" placeholder="Password">
+                            <div class="eye-icon" onclick="togglePasswordVisibility()">
+                                <img src="assets/view.svg" alt="Toggle Password Visibility">
+                            </div>
+                        </div>
+                        <div class="inputbox2">
+                            <input type="password" required="required" placeholder="Confirm Password">
+                            <i></i>
+                        </div>
+                    <input type="submit" value="Create Account" style="margin-top: 10px;" id="submit">
+                    
+                    <div class="facebookBox">
+                        <img src="assets/facebooklogo.svg" alt="">
+                        <p>Sign in with Facebook</p>
+                    </div>
+                
+                    <div class="googleBox">
+                        <img src="assets/googlelogo.svg" alt="">
+                        <p>Sign in with Google</p>
+                    </div>
+                
+                    <div class="signup1">Already have an account?
+                        <button class="sunow1" onclick="flip1()"
+                        >Sign In</button>
+                    </div>
+                
+                    <div class="minimalimg">
+                        <img src="assets/Formsideimg.svg" alt="">
+                    </div>
+                
+                    <div class="Terms">
+                        <a href="#">By signing up, you agree to our Terms & conditions, Privacy policy</a>
+                    </div>
+                
+                </div>
+
+
+
+                    </div>
+                  </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+    <!--header-->
+    <section class="image-container">
+        <img class="bgimg" src="./assets/header.svg" alt="reload please" />
+        <div class="text-over-image">
+            <h2 class="CEng">Computer Engineering</h2>
+            <p class="countCE">142,765 Computer Engineers follow this</p>
+        </div>
+    </section>
+
+    <!-- mobile header-->
+    <section class="image-containerMD">
+        <button class="joinBtn" id="joinBtn" onclick="toggleJoin(this)">Join Group</button>
+        <div><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+        <img class="bgimgMD" src="./assets/header.svg" alt="reload please" />
+        <div class="text-over-imageMD">
+            <h2 class="CEngMD">Computer Engineering</h2>
+            <p class="countCEMD">142,765 Computer Engineers follow this</p>
+        </div>
+    </section>
+
+    <!--catagories-->
+    <section class="category-container">
+        <div class="max-width linew">
+            <div class="category-list">
+                <div class="category active" onclick="toggleCategory('all')">All Posts(32)</div>
+                <div class="category" onclick="toggleCategory('articles')">Article</div>
+                <div class="category" onclick="toggleCategory('event')">Event</div>
+                <div class="category" onclick="toggleCategory('education')">Education</div>
+                <div class="category" onclick="toggleCategory('job')">Job</div>
+            </div>
+            <div class="inner-button">
+                <button class="samebtn wrpo"><div style="display: flex;flex-direction: row;align-items: center">Write a Post<img src="assets/dropdown.svg"></div></button>
+                <button class="samebtn jogr" id="groupButton" onclick="toggleGroupStatus()"><div style="display: flex;align-items: center"><img src="assets/joingrp.svg">Join Group</div></button>
+            </div>
+        </div>
+
+        <!-- mobile linew -->
+
+        <div class="linewMD">
+             <h3>Posts(368)</h3>
+             <button>Filter: All <i id="ddown" class="fa-sharp fa-solid fa-caret-down"></i></button>
+        </div>
+
+            <div class="side-bar">
+                <div class="location-input">
+                    <img src="assets/locationicon.svg" >
+                    <div class="permanent-placeholder" placeholder="Enter your location"> Noida, India</div>
+                    <input type="text" class="editable-input" value="Noida, India">
+                    <img id="editIcon" class="edit-icon" src="assets/editicon.svg" onclick="toggleEdit()">
+                </div>
+                <div class="others">
+                    <p class="note"><img src="assets/i-icon.svg"> Your location will help us serve better and extend a personalised experience.</p>
+                </div>
+                <div class="rec-grp">
+                    <!--follow list-->
+                    <p class="rec-head"><img src="assets/thumbsup.svg"> RECOMMENDED GROUPS</p>
+                    <div class="sidedp content1">
+                        <div class="imgto">
+                            <img src="assets/leasure.svg" alt="reload">
+                            <p class="gtopic">Leisure</p>
+                        </div>
+                        <button class="follow" onclick="toggleFollow(this)">Follow</button>
+                    </div>
+                    <div class="sidedp content2">
+                        <div class="imgto">
+                            <img src="assets/activism.svg" alt="reload">
+                            <p class="gtopic">Activism</p>
+                        </div>
+                        <button class="follow" onclick="toggleFollow(this)">Follow</button>
+                    </div>
+                    <div class="sidedp content3">
+                        <div class="imgto">
+                            <img src="assets/mba.svg" alt="reload">
+                            <p class="gtopic">MBA</p>
+                        </div>
+                        <button class="follow" onclick="toggleFollow(this)">Follow</button>
+                    </div>
+                    <div class="sidedp content4">
+                        <div class="imgto">
+                            <img src="assets/phylosophy.svg" alt="reload">
+                            <p class="gtopic">Philosophy</p>
+                        </div>
+                        <button class="follow" onclick="toggleFollow(this)">Follow</button>
+                    </div>
+                </div>
+                <div class="see-more">
+                    <a class="sidown" href="#">See More...</a>
+                </div>
+            </div>
+
+        <!--body content-->
+        <div class="category-content" id="all">
+
+          <!--first card-->  
+          <div class="Mainbox">
+            <img class="aimg" src="assets/article1.svg" alt="reconnect">
+            <h2 class="its htype">✍️ Article</h2>
+            <div class="regular-topic">
+                <p class="its sheading">What if famous brands had regular fonts? Meet RegulaBrands!</p>
+                <div class="dropdown">
+                    <div class="dropdown-button" id="dropdown-button1">
+                    <img src="assets/elipsis.svg">
+                    </div>
+                    <div class="dropdown-content" id="dropdown-content1">
+                    <a href="#">Edit</a>
+                    <a href="#">Report</a>
+                    <a href="#">Option 3</a>
+                    </div>
+                </div>
+            </div>
+            <p class="its extra">I've worked in UX for the better part of a decade. From now on, I plan to rei...</p>
+            <div class="box-footer">
+                <div class="bel profile">
+                    <img class="dp" src="assets/article1author.svg" alt="reload">
+                    <p class="uname">Sarthak Kamra</p>
+                    <p class="viewsMd"></i>1.4k views</p>
+                </div>
+                <div class="bel end">
+                    <p class="views"><img src="assets/view.svg" style="margin-right: 5px;">1.4k views</p>
+                    <div class="sharebtn"><img src="assets/shareicon.svg"></div>
+                </div>
+
+                <!-- views mobiel -->
+                <div class="bel endMd">
+                    <div class="sharebtnMd"><img src="assets/shareicon.svg"><p>share</p></div>
+                </div>
+            </div>
+          </div>
+
+          <!--Second card-->
+          <div class="Mainbox">
+            <img class="aimg" src="assets/article2.svg" alt="reconnect">
+            <h2 class="its htype">🔬 Education</h2>
+            <div class="regular-topic">
+                <p class="its sheading">Tax Benefits for Investment under National Pension Scheme Launched by Government</p>
+                <div class="dropdown">
+                    <div class="dropdown-button" id="dropdown-button2">
+                        <img src="assets/elipsis.svg">
+                    </div>
+                    <div class="dropdown-content" id="dropdown-content2">
+                    <a href="#">Edit</a>
+                    <a href="#">Report</a>
+                    <a href="#">Option 3</a>
+                    </div>
+                </div>
+            </div>
+            <p class="its extra">I've worked in UX for the better part of a decade. From now on, I plan to rei...</p>
+            <div class="box-footer">
+                <div class="bel profile">
+                    <img class="dp" src="assets/article2author.svg" alt="reload">
+                    <p class="uname">Sarah West</p>
+                    <p class="viewsMd2"></i>4.8k views</p>
+                </div>
+                <div class="bel end">
+                    <p class="views"><img src="assets/view.svg">1.4k views</p>
+                    <div class="sharebtn"><img src="assets/shareicon.svg"></div>
+                </div>
+
+                <!-- views mobiel -->
+                <div class="bel endMd">
+                    <div class="sharebtnMd"><img src="assets/shareicon.svg"><p>share</p></div>
+                </div>
+            </div>
+          </div>
+
+          <!--Third card-->
+          <div class="Mainbox">
+            <img class="aimg" src="assets/article3.svg" alt="reconnect">
+            <h2 class="its htype">🗓️ Meetup</h2>
+            <div class="regular-topic">
+                <p class="its sheading">Finance & Investment Elite Social Mixer @Lujiazui</p>
+                <div class="dropdown">
+                    <div class="dropdown-button" id="dropdown-button3">
+                        <img src="assets/elipsis.svg">
+                    </div>
+                    <div class="dropdown-content" id="dropdown-content3">
+                    <a href="#">Edit</a>
+                    <a href="#">Report</a>
+                    <a href="#">Option 3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dandl">
+                <p><i class="fa-regular fa-calendar"></i> Fri, 12 Oct, 2018</p>
+                <p><i class="fa-solid fa-location-dot"></i> Ahmedabad, India</p>
+            </div>
+            <button class="vweb onebox">Visit Website</button>
+            <div class="box-footer">
+                <div class="bel profile">
+                    <img class="dp" src="assets/article3author.svg" alt="reload">
+                    <p class="uname">Ronal Jones</p>
+                    <p class="viewsMd2"></i>800 views</p>
+                </div>
+                <div class="bel end">
+                    <p class="views"><img src="assets/view.svg">1.4k views</p>
+                    <div class="sharebtn"><img src="assets/shareicon.svg"></div>
+                </div>
+
+                <!-- views mobiel -->
+                <div class="bel endMd">
+                    <div class="sharebtnMd"><img src="assets/shareicon.svg"><p>share</p></div>
+                </div>
+            </div>
+          </div>
+
+          <!--Fouth card-->
+          <div class="Mainbox last">
+            <h2 class="its htype">💼 Job</h2>
+            <div class="regular-topic">
+                <p class="its sheading">Software Developer</p>
+                <div class="dropdown">
+                    <div class="dropdown-button" id="dropdown-button4">
+                        <img class="elipsis-icon" src="assets/elipsis.svg">
+                    </div>
+                    <div class="dropdown-content" id="dropdown-content4">
+                    <a href="#">Edit</a>
+                    <a href="#">Report</a>
+                    <a href="#">Option 3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dandl">
+                <p><i class="fa-solid fa-suitcase"></i> Innovaccer Analytics Private Ltd.</p>
+                <p><i class="fa-solid fa-location-dot"></i> Noida, India</p>
+            </div>
+            <button class="vweb twobox">Apply on Timesjobs</button>
+            <div class="box-footer">
+                <div class="bel profile">
+                    <img class="dp" src="assets/article4author.svg" alt="reload">
+                    <p class="uname">Ronal Jones</p>
+                    <p class="viewsMd2"></i>1.7k views</p>
+                </div>
+                <div class="bel end">
+                    <p class="views"><img src="assets/view.svg">1.4k views</p>
+                    <div class="sharebtn"><img src="assets/shareicon.svg"></div>
+                </div>
+
+                <!-- views mobiel -->
+                <div class="bel endMd">
+                    <div class="sharebtnMd"><img src="assets/shareicon.svg"><p>share</p></div>
+                </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!--Articles-->
+        <div class="category-content" id="articles">
+            <div class="Mainbox">
+                <img class="aimg" src="assets/article1.svg" alt="reconnect">
+                <h2 class="its htype">✍️ Article</h2>
+                <div class="regular-topic">
+                    <p class="its sheading">What if famous brands had regular fonts? Meet RegulaBrands!</p>
+                    <div class="dropdown">
+                        <div class="dropdown-button" id="dropdown-button5">
+                            <img class="elipsis-icon" src="assets/elipsis.svg">
+                        </div>
+                        <div class="dropdown-content" id="dropdown-content5">
+                        <a href="#">Edit</a>
+                        <a href="#">Report</a>
+                        <a href="#">Option 3</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="its extra">I've worked in UX for the better part of a decade. From now on, I plan to rei...</p>
+                <div class="box-footer">
+                    <div class="bel profile">
+                        <img class="dp" src="assets/article1author.svg" alt="reload">
+                        <p class="uname">Sarthak Kamra</p>
+                    </div>
+                    <div class="bel end">
+                        <p class="views"><img src="assets/view.svg">1.4k views</p>
+                        <div class="sharebtn"><img src="assets/shareicon.svg"></div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!--Events-->
+        <div class="category-content" id="event">
+            <div class="Mainbox">
+                <img class="aimg" src="assets/article3.svg" alt="reconnect">
+                <h2 class="its htype">🗓️ Meetup</h2>
+                <div class="regular-topic">
+                    <p class="its sheading">Finance & Investment Elite Social Mixer @Lujiazui</p>
+                    <div class="dropdown">
+                        <div class="dropdown-button" id="dropdown-button6">
+                            <img class="elipsis-icon" src="assets/elipsis.svg">
+                        </div>
+                        <div class="dropdown-content" id="dropdown-content6">
+                        <a href="#">Edit</a>
+                        <a href="#">Report</a>
+                        <a href="#">Option 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dandl">
+                    <p><i class="fa-regular fa-calendar"></i> Fri, 12 Oct, 2018</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Ahmedabad, India</p>
+                </div>
+                <button class="vweb onebox">Visit Website</button>
+                <div class="box-footer">
+                    <div class="bel profile">
+                        <img class="dp" src="assets/article3author.svg" alt="reload">
+                        <p class="uname">Ronal Jones</p>
+                    </div>
+                    <div class="bel end">
+                        <p class="views"><img src="assets/view.svg">1.4k views</p>
+                        <div class="sharebtn"><img src="assets/shareicon.svg"></div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!--Education-->
+        <div class="category-content" id="education">
+            <div class="Mainbox">
+                <img class="aimg" src="assets/article3.svg" alt="reconnect">
+                <h2 class="its htype">🔬 Education</h2>
+                <div class="regular-topic">
+                    <p class="its sheading">Tax Benefits for Investment under National Pension Scheme Launched by Government</p>
+                    <div class="dropdown">
+                        <div class="dropdown-button" id="dropdown-button7">
+                            <img class="elipsis-icon" src="assets/elipsis.svg">
+                        </div>
+                        <div class="dropdown-content" id="dropdown-content7">
+                        <a href="#">Edit</a>
+                        <a href="#">Report</a>
+                        <a href="#">Option 3</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="its extra">I've worked in UX for the better part of a decade. From now on, I plan to rei...</p>
+                <div class="box-footer">
+                    <div class="bel profile">
+                        <img class="dp" src="assets/article2author.svg" alt="reload">
+                        <p class="uname">Sarah West</p>
+                    </div>
+                    <div class="bel end">
+                        <p class="views"><img src="assets/view.svg">1.4k views</p>
+                        <div class="sharebtn"><img src="assets/shareicon.svg"></div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!--Jobs-->
+        <div class="category-content" id="job">
+            <div class="Mainbox last">
+                <h2 class="its htype">💼 Job</h2>
+                <div class="regular-topic">
+                    <p class="its sheading">Software Developer</p>
+                    <div class="dropdown">
+                        <div class="dropdown-button" id="dropdown-button8">
+                            <img class="elipsis-icon" src="assets/elipsis.svg">
+                        </div>
+                        <div class="dropdown-content" id="dropdown-content8">
+                        <a href="#">Edit</a>
+                        <a href="#">Report</a>
+                        <a href="#">Option 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dandl">
+                    <p><i class="fa-solid fa-suitcase"></i> Innovaccer Analytics Private Ltd.</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Noida, India</p>
+                </div>
+                <button class="vweb twobox">Apply on Timesjobs</button>
+                <div class="box-footer">
+                    <div class="bel profile">
+                        <img class="dp" src="assets/article4author.svg" alt="reload">
+                        <p class="uname">Ronal Jones</p>
+                    </div>
+                    <div class="bel end">
+                        <p class="views"><img src="assets/view.svg">1.4k views</p>
+                        <div class="sharebtn"><img src="assets/shareicon.svg"></div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <div class="pencil" id="signupButtonMd">
+        <img class="logocircle" src="assets/editmobileicon.svg" alt="reload" />
+    </div>
+
+    <!-- sign up md -->
+
+    <div class="overlayMd" id="signupOverlayMd">
+        <div class="overlay-content">
+            <span class="close" id="closeOverlayMd"><i class="fa-solid fa-xmark"></i></span>
+        <div class="card" id="card">
+        <div class="form" id="formMd">
+         <!--front-->
+            <div class="front">
+                <h2>Welcome Back!</h2>
+                <div class="inputbox">
+                    <input type="text" required="required" placeholder="Email">
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input type="password" id="passwordField" required="required" placeholder="Password">
+                    <div class="eye-icon">
+                        <img src="assets/view.svg" alt="Toggle Password Visibility">
+                    </div>
+                </div>
+                
+            <input type="submit" value="Sign In" id="create">
+    
+            <div class="facebookBox">
+            <img src="assets/facebooklogo.svg" alt="">
+            <p>Sign in with Facebook</p>
+            </div>
+    
+            <div class="googleBox">
+                <img src="assets/googlelogo.svg" alt="">
+                <p>Sign in with Google</p>
+            </div>
+    
+            <div class="signup">
+                <button class="sunow" onclick="flip2()"
+                >or, Create Account</button>
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password?</a>
+            </div>
+    
+            <div class="minimalimg">
+                <img src="assets/Formsideimg.svg" alt="">
+            </div>
+         </div>
+
+         <!-- back -->
+         <div class="back">
+            
+            <h2>Create Account</h2>
+            <div class="namebox">
+    
+                    <input type="text" required="required" placeholder="First Name">
+                    <i></i>
+            
+                    <input type="text" required="required" placeholder="Last Name">
+                    <i></i> 
+            </div>
+            <div class="inputbox2">
+                <input type="text" required="required" placeholder="Email">
+                <i></i>
+            </div>
+            <div class="inputbox2">
+                <input type="password" id="passwordField" required="required" placeholder="Password">
+                <div class="eye-icon" onclick="togglePasswordVisibility()">
+                    <img src="assets/view.svg" alt="Toggle Password Visibility">
+                </div>
+            </div>
+            <div class="inputbox2">
+                <input type="password" required="required" placeholder="Confirm Password">
+                <i></i>
+            </div>
+        <input type="submit" value="Create Account" style="margin-top: 10px;" id="submit">
+        
+        <div class="facebookBox">
+            <img src="assets/facebooklogo.svg" alt="">
+            <p>Sign in with Facebook</p>
+        </div>
+    
+        <div class="googleBox">
+            <img src="assets/googlelogo.svg" alt="">
+            <p>Sign in with Google</p>
+        </div>
+    
+        <div class="signup1">
+            <button class="sunow1" onclick="flip3()"
+            >or, Sign In</button>
+        </div>
+    
+        <div class="minimalimg">
+            <img src="assets/signimg.png" alt="">
+        </div>
+    
+        <div class="Terms">
+            <a href="#">By signing up, you agree to our Terms & conditions, Privacy policy</a>
+        </div>
+    
+    </div>
+        </div>
+      </div>
+        
+    </div>
+</div>
+
+    <!--javascript-->
+
+    <script src="js/category.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/followlist.js"></script>
+    <script src="js/SignUp.js"></script>
+</body>
+
+=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -653,4 +1319,5 @@
     <script src="js/SignUp.js"></script>
 </body>
 
+>>>>>>> 97c1d1baa74163da177b740cfd0267a30d1cb396
 </html>
