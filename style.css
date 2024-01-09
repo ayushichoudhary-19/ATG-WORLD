@@ -1,10 +1,8 @@
 /*google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=JetBrains+Mono:wght@100;300&family=Poppins:wght@300&family=Press+Start+2P&display=swap');
-*{
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-/*Main*/
+
 * {
+    font-family: 'IBM Plex Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -197,6 +195,7 @@ nav {
 .inputbox{
     position: relative;
     top: 6%;
+    width: 50%;
 }
 .inputbox input{
     padding: 3%;
@@ -248,6 +247,9 @@ input[type="submit"]{
     margin-left: 4%;
     font-size: 14px;
     font-weight: 600;
+}
+.facebookBox, .googleBox{
+    border: 0.6px solid #D9D9DB!important;
 }
 .googleBox{
     margin-top: 2%;
@@ -333,9 +335,10 @@ input[type="submit"]{
     margin-top: 2%;
 }
 .namebox input{
+    border: 1px solid #D9D9DB;
+    background-color: #F7F8FA;
     width: 160px;
     padding: 2%;
-    border: 1px solid rgba(217, 217, 219, 1);
 }
 .back .close-btn{
     position: absolute;
@@ -355,10 +358,12 @@ input[type="submit"]{
 
 .inputbox2{
     position: relative;
+    width: 50%;
 }
 .inputbox2 input{
+    border: 1px solid #D9D9DB;
+    background-color: #F7F8FA;
     padding: 3%;
-    border: 1px solid rgba(217, 217, 219, 1);
     width: 320px;
     height: 46px;
 }
@@ -681,8 +686,9 @@ input[type="submit"]{
     align-items: center;
  }
  .samebtn {
+    font-size: 15px;
     padding: 12px 23px;
-    font-weight: 600;
+    font-weight: bold;
     border: none;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -1141,5 +1147,23 @@ input[type="submit"]{
         border: 2px solid #212529;
         z-index: 1000;
     }
+    .inputbox2{
+        position: relative;
+        width:auto;
+    }
+}
+.eye-icon {
+    position: absolute;
+    padding-right: 10px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
+#passwordField {
+    padding-right: 30px;
+}
+.sunow{
+    text-decoration: underline;
+}
